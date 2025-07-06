@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Age Calculator UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="card">
+        <div class="input-group">
+          <label class="input-each">
+            <span id="error">DAY</span>
+            <input type="text" placeholder="DD" id="days">
+            <p class="error-message">This field is required</p>
+            <p class="error-valid">Must be a valid day</p>
+          </label>
+          <label class="input-each">
+            <span id="error">MONTH</span>
+            <input type="text" placeholder="MM" id="months">
+            <p class="error-message">This field is required</p>
+            <p class="error-valid">Must be a valid month</p>
+          </label>
+          <label class="input-each">
+            <span id="error">YEAR</span>
+            <input type="text" placeholder="YYYY" id="years">
+            <p class="error-message">This field is required</p>
+            <p class="error-valid">Must be in the past</p>
+          </label>
+        </div>
+
+        <div class="line-container">
+          <div class="line"></div>
+          <button class="circle-button">
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+
+        <div class="result">
+          <p><span class="purple" id="year">- -</span> <span class="black">years</span></p>
+          <p><span class="purple" id="month">- -</span> <span class="black">months</span></p>
+          <p><span class="purple" id="day">- -</span> <span class="black">days</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
